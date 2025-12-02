@@ -86,11 +86,10 @@ const images = [
     ul.addEventListener("click", (event) => {
         event.preventDefault();
         const selectedItem = event.target;
-        console.log(selectedItem);
+    if(selectedItem.nodeName !== "IMG"){return} else {
+        event.target = instance.show();
         const instance = basicLightbox.create(`
             <img src="${selectedItem.dataset.source}" width="800" height="600">
         `);
-    if(selectedItem.nodeName !== "IMG"){return} else {
-        event.target = instance.show(console.log('lightbox now visible'));
 }}
 );
