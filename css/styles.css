@@ -10,17 +10,29 @@ ul{
 .gallery {
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 24px;
+    flex-wrap: wrap;
     margin: 100px auto;
     justify-content: center;
+    
+}
+
+.gallery-item:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+
 }
 
 .gallery-item {
  list-style-type:none;
+ width:360px;
+ height:auto;
 }
 
 .gallery-image {
-    width:360px;
-    height:300px;
+    width:100%;
+}
+
+.modal{
+    background-color:#2E2F42;
 }
