@@ -63,6 +63,7 @@ const images = [
         description: 'Lighthouse Coast Sea',
       },
     ];
+    
 
 
     const ul = document.querySelector("ul.gallery");
@@ -91,7 +92,6 @@ const images = [
             <img src="${selectedItem.dataset.source}" width="800" height="600">
         `, {
             className: 'modal',
-        });
-        instance.show() = event.target;
+        }).show();
 }}
 );

@@ -12,21 +12,26 @@ ul{
     flex-direction: row;
     gap: 24px;
     flex-wrap: wrap;
-    margin: 100px auto;
+    margin: 24px auto;
     justify-content: center;
     
 }
 
-.gallery-item:hover{
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-
+.gallery-item {
+    overflow: hidden;
+    object-fit: cover;
+     list-style-type:none;
+     width:360px;
+     height:200px;
+     align-items: center;
+     justify-items: center;
 }
 
-.gallery-item {
- list-style-type:none;
- width:360px;
- height:auto;
+.gallery-item:hover{
+    transform: width height;
+    transition: transform 0.3s ease;
+    width:376px;
+    height:208px;
 }
 
 .gallery-image {
